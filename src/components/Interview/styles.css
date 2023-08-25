@@ -1,0 +1,84 @@
+
+.question_block {
+    max-width: 814.4px;
+    width: 95%;
+    display: flex;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+question_text {
+    width: 90%;
+    text-align: left;
+    margin-left: 10px;
+}
+
+plus {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../pages/assets/svg/plus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+minus {
+    width: 30px;
+    height: 30px;
+    background-image: url(../../pages/assets/svg/h_minus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    cursor: pointer;
+}
+
+.plus_minus-enter {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../pages/assets/svg/plus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.plus_minus-enter-active {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../pages/assets/svg/h_minus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
+    transition: .4s ease-in-out;
+}
+
+.plus_minus-exit {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../pages/assets/svg/h_minus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.plus_minus-exit-active {
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-180deg);
+    background-image: url(../../pages/assets/svg/plus.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: .4s ease-in-out;
+}
+
+.drop_text {
+    margin-left: 40px;
+}

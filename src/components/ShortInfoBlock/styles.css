@@ -1,0 +1,80 @@
+.short_info_block {
+  width: 160px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  margin: 10px 5px 10px 5px;
+  font: 400 18px 'Open Sans',sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.photo_container_outer {
+  width: 160px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 10px;
+  border-style: none;
+  
+}
+  
+.photo_inner {
+  background-color: black;
+  height: 85px;  
+  border-radius: 10px;
+  border-style: none;
+}
+  
+.photo_inner:hover {
+  transform: scale(1.1);
+}
+  
+.faculty_logo {
+  height: 34px;
+  width: 34px;
+  background: none;
+  z-index: 10;
+  position: absolute;
+  top: 65px;
+  left: 120px;
+}
+
+.text_container {
+  height: 106px;
+  width: 160px;
+  margin-top: 5px;
+  padding: 3px;
+  display: block;
+}
+
+.name_faculty {
+  display: inline-flex;
+  font-size: 12px;
+  height: 20px;
+  font-weight: 600;
+  width: 95%;
+  margin: 5px auto 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.singer {
+    display: inline-flex;
+    height: 40px;
+    font-size: 12px;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.song {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  width: 95%;
+  margin: 0 auto;
+  height: 35px;
+}

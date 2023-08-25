@@ -1,0 +1,133 @@
+
+.BurgerMenu {
+  background-color: transparent;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.menu_button_container {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.icon_menu_closed, .icon_menu_open{
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: white;
+  position: relative;
+  z-index: 50;
+}
+
+.icon_menu_open {
+  background-color: transparent;
+}
+
+.icon_menu_closed::before, .icon_menu_closed::after {
+  content: '';
+  border-top: solid 2px;
+  border-color: black;
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  right: 18px;
+  transition: 
+    translate .4s .2s,
+    rotate .2s;
+  transform-origin: 12px 1px;
+}
+
+.icon_menu_closed::before {
+  top: 20px;
+}
+
+.icon_menu_closed::after {
+  bottom: 18px;
+}
+
+.icon_menu_line {
+  border-top: solid 2px;
+  border-color: black;
+  height: 2px;
+  width: 16px;
+  position: absolute;
+  right: 18px;
+  top: 29px;
+}
+
+.icon_menu_closed .icon_menu_line {
+  opacity: 1;
+  transition: 
+  opacity 0s .2s;
+}
+
+.icon_menu_open .icon_menu_line {
+  opacity: 0;
+}
+
+.icon_menu_open::before, .icon_menu_open::after  {
+  content: '';
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  right: 18px;
+  transform-origin: 11.5px 1.5px;
+  transition: 
+    translate .4s,
+    rotate .2s .4s;
+}
+
+.icon_menu_open::before {
+  top: 20px;
+  translate: 0px 9px;
+  rotate: -225deg;
+}
+
+.icon_menu_open::after {
+  bottom: 18px;
+  translate: 0px -9px;
+  rotate: -135deg;
+}
+
+.Menu {
+  height: 2000px;
+  width: 2000px;
+  border-radius: 50%;
+  background-color: #363b41;
+  opacity: .99;
+  z-index: 20;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.links_block {
+  font-size: 0.2em;
+  width: 100%;
+  background-color: transparent;
+}
+
+.links_block div {
+  cursor: pointer;
+}
+
+
+

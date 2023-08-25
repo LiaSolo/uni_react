@@ -1,0 +1,54 @@
+
+.App {
+  text-align: center;
+  background-image: url(../assets/background2.png);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Uni-logo {
+    max-height: 300px;
+    height: 95%;
+    pointer-events: none;
+  }
+  
+buttonEnable, buttonDisable {
+    width: 500px;
+    height: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;    
+    margin: 5px;
+    font: 400 18px 'Open Sans',sans-serif;
+    border-radius: 10px;
+  }
+
+buttonEnable {
+  background-color: rgba(114, 164, 207, 0.7);
+  cursor: pointer;
+}
+  
+buttonDisable {
+    background-color: rgba(125, 136, 145, 0.7);
+    padding: 20px;
+  }
+  
+buttonDisable div{
+    font: 400 14px 'Open Sans',sans-serif;
+  }
+  
+buttonEnable:hover {
+    transform: scale(1.2);
+  }
+
+.link_container {
+  margin-top: 20px;
+  font: 400 14px 'Open Sans',sans-serif;
+}
